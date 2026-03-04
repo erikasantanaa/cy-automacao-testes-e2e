@@ -1,0 +1,26 @@
+{
+  "name": "cy-automacao-testes-2e2",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes com Cypress + TypeScript, com a estrutura organizada seguindo boas práticas de Clean Code aplicadas a testes E2E.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikasantanaa/cy-automacao-testes-2e2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikasantanaa/cy-automacao-testes-2e2/issues"
+  },
+  "homepage": "https://github.com/erikasantanaa/cy-automacao-testes-2e2#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "cypress": "^15.11.0",
+    "cypress-sonarqube-reporter": "^1.13.6",
+    "typescript": "^5.9.3"
+  }
+}
