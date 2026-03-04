@@ -1,6 +1,6 @@
 import { defineConfig } from "cypress";
 
-// const ENV = process.env.ENV || "dev";
+// const ENV = process.env.ENV || "orange";
 
 export default defineConfig({
   viewportWidth: 1280,
@@ -13,9 +13,9 @@ export default defineConfig({
     e2e: {
     baseUrl: process.env.BASE_URL || "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     
-  specPattern: `teste-e2e/orange-hrm/e2e/**/*.cy.ts`,
-    supportFile: `teste-e2e/orange-hrm/support/e2e.ts`,
-    fixturesFolder: `teste-e2e/orange-hrm/fixtures`,
+  specPattern: `teste-e2e/orange-hrm/cypress/e2e/**/*.cy.ts`,
+    supportFile: `teste-e2e/orange-hrm/cypress/support/e2e.ts`,
+    fixturesFolder: `teste-e2e/orange-hrm/cypress/fixtures`,
 
 
     chromeWebSecurity: false,
