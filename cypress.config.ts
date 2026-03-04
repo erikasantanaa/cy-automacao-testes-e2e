@@ -11,7 +11,7 @@ export default defineConfig({
     openMode: 0,
   },
     e2e: {
-    baseUrl: process.env.BASE_URL || "http://app-dev.sefa.pa.gov.br/pservicos#",
+    baseUrl: process.env.BASE_URL || "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     
   specPattern: `teste-e2e/orange-hrm/e2e/**/*.cy.ts`,
     supportFile: `teste-e2e/orange-hrm/support/e2e.ts`,
