@@ -1,7 +1,16 @@
-describe("OrangeHRM - Login", () => {
+describe("Deve logar com sucesso", () => {
 
   beforeEach(() => {
-    cy.visit("/web/index.php/auth/login");
+    cy.startTest()
+    cy.submitLoginForm('', '')
+
+    cy.get()
+      .should('be.visible')
+      .and('have.text', '')
+
+    cy.get()
+      .should('be.visible')
+      .and('have.text', '')
   });
 
   it("Deve realizar login com sucesso", () => {
