@@ -21,9 +21,13 @@ describe('Formulário de Consultoria', () => {
             .type('11 98865-1000')
             .should('have.value', '(11) 98865-1000')
 
-        /**Estrategia com label - */
-        //.select: O cypress não consegue clicar no componente de selecionar, pois as informações são vindo do navegador. O que se pode fazer é usar o select
+        /**Campo selecionar dados em lista: Estrategia com label - */
+        //.select (para nativos do HTML): O cypress não consegue clicar no componente de selecionar, pois as informações são vindo do navegador. O que se pode fazer é usar o select
         //sem xpah - usa: contains + parent+ find+select
+        /**Exemplo para angular material: quando o selecionar for material
+         * cy.get('[data-testid="form-informar-tipo-filtro"]').click() // abre o dropdown
+         * cy.get('md-option').contains('Nome').click() // seleciona a opção
+        */
         cy.get('label', 'Tipo de consultoria')
             .parent()
             .find('select')
